@@ -1,0 +1,214 @@
+$break-phone: 767px;
+$break-phone-landscape: 767px;
+$break-tablet: 1022px;
+$break-laptop-small: 1280px;
+$break-laptop-medium: 1440px;
+$break-laptop-large: 1920px;
+$break-desktop: 50000px;
+
+@mixin respond-to($media) {
+  @if $media == desktop {
+    @media only screen and (min-width: $break-laptop-large + 1) and (max-width: $break-desktop) { @content; }
+  }
+  @else if $media == laptop-large {
+    @media only screen and (min-width: $break-laptop-medium + 1) and (max-width: $break-laptop-large) { @content; }
+  }
+  @else if $media == laptop-medium {
+    @media only screen and (min-width: $break-laptop-small + 1) and (max-width: $break-laptop-medium) { @content; }
+  }
+  @else if $media == laptop-small {
+    @media only screen and (min-width: $break-tablet + 1) and (max-width: $break-laptop-small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break-phone + 1) and (max-width: $break-tablet) { @content; }
+  }
+  @else if $media == phone {
+    @media only screen and (min-width: 0px) and (max-width: $break-phone) { @content; }
+  }
+}
+
+@mixin hero-h1(){
+  font-size: 24px;
+  font-family: 'Helvetica';
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+@mixin hero-h3{
+  font-family: 'Helvetica';
+  font-size: 15px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+@mixin section-headline-h3(){
+  font-family: 'Helvetica';
+  height: 26px;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  font-weight: bold;
+  color: #444444;
+}
+
+@mixin a(){
+  text-decoration: none;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  line-height: 36px;
+  color: #FFF;
+}
+
+@mixin h4(){
+  text-transform: uppercase;
+  font-family: 'Helvetica';
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+@mixin title-p(){
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+@mixin rounded-cta-color-fill(){
+  -webkit-appearance: none;
+  border-radius: 10px;
+  background-color:rgb(66,68,235);
+  opacity: .95;
+  border: none;
+}
+
+@mixin rounded-cta-color-fill-p(){
+  font-family: 'Helvetica';
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFF;
+  padding: 4px;
+}
+
+@mixin link-rounded-border-no-fill(){
+  height: 36px;
+  width: 90px;
+  border: 2px solid #FFF;
+  border-radius: 40px;
+  text-align: center;
+}
+
+@mixin step-p(){
+  color: #FFF;
+  font-family: 'Helvetica';
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+@mixin card-headline(){
+  color: #FFF;
+  font-family: 'Helvetica';
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+@mixin card-description(){
+  color: #E3E3E3;
+  font-family: 'Helvetica';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+@mixin flex-row(){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@mixin partner-cta(){
+  -webkit-appearance: none;
+  height: 40px;
+  width: 180px;
+  border: 2px solid #FF4E50;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+}
+
+@mixin section-subtitle(){
+  color: #666666;
+  font-family: 'Helvetica';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: center;
+}
+
+@mixin input-field(){
+  width: 240px;
+  height: 20px;
+	border: 1px solid #D4D4D4;
+  outline: 0;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5), 0 1px 2px 0 rgba(0,0,0,0.07);
+  background-color: #FFFFFF;
+}
+
+@mixin footer-logo(){
+  font-family: 'Helvetica';
+  color: #FF4E50;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@mixin footer-column(){
+  position: relative;
+  flex: 1;
+  width: 33%;
+}
+
+@mixin mask(){
+  background-color: black;
+  opacity: .2;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin three-col-grid{
+  display: grid;
+  width: 85%;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@mixin four-col-grid{
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@mixin center-content(){
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin center-horizontally(){
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin center-vertically(){
+  top: 50%;
+  transform: translateY(-50%);
+}

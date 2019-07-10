@@ -1,0 +1,33 @@
+<svg width="77" height="35" viewBox="0 0 77 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Logo</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-34907 2894)">
+<g id="Logo">
+<g id="Logo">
+<g id="Mask">
+<use xlink:href="#path0_fill" transform="translate(34942.3 -2889)" fill="#FFFFFF"/>
+</g>
+<g id="Path" filter="url(#filter0_f)">
+<use xlink:href="#path1_fill" transform="translate(34915.9 -2885.25)" fill="#000000" fill-opacity="0.170148"/>
+</g>
+<g id="Path">
+<use xlink:href="#path1_fill" transform="translate(34915.9 -2889)" fill="#007AFF"/>
+<use xlink:href="#path1_fill" transform="translate(34915.9 -2889)" fill="url(#paint3_linear)" style="mix-blend-mode:soft-light"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f" filterUnits="userSpaceOnUse" x="34907" y="-2894" width="35" height="35" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="4.07742" result="effect1_foregroundBlur"/>
+</filter>
+<linearGradient id="paint3_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(17.3289 17.7561 -17.3289 17.7561 0.238073 0.243941)">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.01"/>
+</linearGradient>
+<path id="path0_fill" fill-rule="evenodd" d="M 2.83203 9.91748L 2.83203 14.9136L 6.03125 14.9136C 8.34375 14.9136 8.73828 13.3147 8.73828 12.4155C 8.73828 11.5413 8.22266 9.91748 6.05469 9.91748L 2.83203 9.91748ZM 2.83203 2.573L 2.83203 7.34424L 5.88281 7.34424C 8.19531 7.34424 8.58984 5.82056 8.58984 4.97119C 8.58984 4.57642 8.50781 4.04907 8.20703 3.58936C 7.84375 3.03125 7.15234 2.573 5.88281 2.573L 2.83203 2.573ZM 0 0L 5.88281 0C 10.6055 0 11.418 3.14746 11.418 4.97119C 11.418 7.36938 9.86719 8.36865 8.6875 8.64331C 9.69531 8.89307 11.5664 9.84229 11.5664 12.4155C 11.5664 14.239 10.7539 17.4866 6.03125 17.4866L 0 17.4866L 0 0ZM 16.5391 11.666C 16.5391 13.6646 17.8672 15.3633 19.8867 15.3633C 21.9531 15.3633 23.2812 13.6646 23.2812 11.666C 23.2812 9.66748 21.9531 7.96899 19.8867 7.96899C 17.8672 7.96899 16.5391 9.66748 16.5391 11.666ZM 19.8867 5.54565C 16.2422 5.54565 13.8555 8.36841 13.8555 11.666C 13.8555 14.9634 16.2422 17.7864 19.8867 17.7864C 23.5781 17.7864 25.9648 14.9634 25.9648 11.666C 25.9648 8.36841 23.5781 5.54565 19.8867 5.54565ZM 28.6953 0L 31.3789 0L 31.3789 17.4868L 28.6953 17.4868L 28.6953 0ZM 35.6133 2.32324L 38.293 2.32324L 38.293 5.84546L 41.2539 5.84546L 39.6289 8.11865L 38.293 8.11865L 38.293 12.915C 38.293 14.9385 38.9102 15.1882 39.9688 15.1882C 40.3867 15.1882 41.0508 15.1384 41.3203 15.0884L 41.3203 17.4866C 40.9023 17.5615 40.1172 17.6365 39.3281 17.6365C 38.0234 17.6365 35.6133 17.4617 35.6133 13.5396L 35.6133 8.11865L 33.668 8.11865L 33.668 5.84546L 35.6133 5.84546L 35.6133 2.32324Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 11.25L 10.6134 11.25L 10.2474 18L 17.567 6.75L 6.95361 6.75L 7.39644 0L 0 11.25Z"/>
+</defs>
+</svg>

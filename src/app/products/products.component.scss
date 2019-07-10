@@ -1,0 +1,50 @@
+@import '../sass/_mixins';
+@import '../sass/_variables';
+
+
+.cards-container{
+  padding-top: 100px;
+  width: 87%;
+  position: relative;
+  @include center-horizontally();
+  @include three-col-grid();
+  margin-bottom: $section-margin-bottom;
+  @include respond-to(phone){
+    display: block;
+  }
+  .card{
+    height: 400px;
+    width: 100%;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    @include respond-to(phone){
+      width: 100%;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+    .card-text-container{
+      position: relative;
+      padding: 15px;
+      top: 80%;
+      z-index: 3;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.step{
+  @include rounded-cta-color-fill();
+  @include step-p();
+  height: 20px;
+  width: 70px;
+  text-align: center;
+}
+
+.card-headline{
+  @include card-headline();
+}
+.card-description{
+  @include card-description();
+}
