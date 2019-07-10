@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { hasParentInjector } from '@angular/core/src/render3/util';
-// import '../../assets/deprecated_js';
 
 @Component({
   selector: 'app-cart',
