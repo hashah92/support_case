@@ -19,7 +19,7 @@ export class CartComponent implements OnInit {
   }
 
   boltCheckout(){
-    //Here we will check if the terms checkbox is checked againsts the isTermsAccepted variable
+    //Here we will check if the terms checkbox is checked againsts the isTermsAccepted variable that we default initialized to false above.
     if(this.isTermsAccepted)
     {
       this.bolt = !this.bolt;
@@ -29,19 +29,28 @@ export class CartComponent implements OnInit {
   giftCheckout(){
     //COMPLETE THIS FUNCTION
     // This function toggles the Gift Card overlay
+    if(this.isTermsAccepted)
+    {
     this.gift = !this.gift;
+    }
   }
 
   paypalCheckout(){
     //COMPLETE THIS FUNCTION
     // This function toggles the paypal overlay
+    if(this.isTermsAccepted)
+    {
     this.paypal = !this.paypal;
+    }
   }
 
   affirmCheckout(){
     //COMPLETE THIS FUNCTION
     // This function toggles the paypal overlay
+    if(this.isTermsAccepted)
+    {
     this.affirm = !this.affirm;
+    }
   }
 
   termsFunc(){
