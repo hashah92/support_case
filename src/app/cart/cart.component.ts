@@ -10,7 +10,8 @@ export class CartComponent implements OnInit {
   bolt:boolean=true;
   gift:boolean=true;
   paypal:boolean=true;
-
+  affirm:boolean=true;
+  isTermsAccepted:boolean=false;
   constructor() { }
 
   ngOnInit() {
@@ -18,22 +19,35 @@ export class CartComponent implements OnInit {
   }
 
   boltCheckout(){
-    this.bolt = !this.bolt;
+    //Here we will check if the terms checkbox is checked againsts the isTermsAccepted variable
+    if(this.isTermsAccepted)
+    {
+      this.bolt = !this.bolt;
+    }
   }
 
   giftCheckout(){
     //COMPLETE THIS FUNCTION
     // This function toggles the Gift Card overlay
+    this.gift = !this.gift;
   }
 
   paypalCheckout(){
     //COMPLETE THIS FUNCTION
     // This function toggles the paypal overlay
+    this.paypal = !this.paypal;
+  }
+
+  affirmCheckout(){
+    //COMPLETE THIS FUNCTION
+    // This function toggles the paypal overlay
+    this.affirm = !this.affirm;
   }
 
   termsFunc(){
     //COMPLETE THIS FUNCTION
     //This function is ran when a user selects the final sale checkbox
+    this.isTermsAccepted = !this.isTermsAccepted;
   }
 
   enableCheckout(){
